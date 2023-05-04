@@ -4,7 +4,7 @@ Y=erf(u) .* cos(v);
 Z=sin(u) .* ones(size(v));
 
 figure;
-plot3(X, Y, Z, 'r', Y, X, Z, 'k')
+plot3(X, Y, Z, 'g', Y, X, Z, 'b')
 grid on
 figure;
 mesh(X, Y, Z)
@@ -14,7 +14,7 @@ figure;
 surf(X, Y, Z)
 colorbar
 figure;
-[C,h]=contour(X, Y, Z,10)
-clabel(C,h)
+[N, H]=contour(X, Y, Z, 5)
+clabel(N, H)
 colorbar
 

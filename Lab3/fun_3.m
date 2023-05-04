@@ -37,3 +37,4 @@ function h = fun_3(a, b, c)
     h = (2/c) * sqrt(p * (p - a) * (p - b) * (p - c))
   endif
 endfunction
+
